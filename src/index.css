@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 220 30% 98%;
+    --foreground: 220 65% 20%;
+ 
+    --card: 220 30% 98%;
+    --card-foreground: 220 65% 20%;
+ 
+    --popover: 220 30% 98%;
+    --popover-foreground: 220 65% 20%;
+ 
+    --primary: 220 65% 20%;
+    --primary-foreground: 220 30% 98%;
+ 
+    --secondary: 43 65% 85%;
+    --secondary-foreground: 220 65% 20%;
+ 
+    --muted: 220 14% 85%;
+    --muted-foreground: 220 14% 46%;
+ 
+    --accent: 43 65% 65%;
+    --accent-foreground: 220 65% 20%;
+ 
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 30% 98%;
+
+    --border: 220 14% 85%;
+    --input: 220 14% 85%;
+    --ring: 43 65% 65%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 220 65% 12%;
+    --foreground: 220 30% 98%;
+ 
+    --card: 220 65% 12%;
+    --card-foreground: 220 30% 98%;
+ 
+    --popover: 220 65% 12%;
+    --popover-foreground: 220 30% 98%;
+ 
+    --primary: 220 30% 98%;
+    --primary-foreground: 220 65% 12%;
+ 
+    --secondary: 220 45% 25%;
+    --secondary-foreground: 220 30% 98%;
+ 
+    --muted: 220 45% 25%;
+    --muted-foreground: 220 14% 75%;
+ 
+    --accent: 43 65% 45%;
+    --accent-foreground: 220 30% 98%;
+ 
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 220 30% 98%;
+ 
+    --border: 220 45% 25%;
+    --input: 220 45% 25%;
+    --ring: 43 65% 45%;
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-navy-200 dark:border-navy-800;
+  }
+  body {
+    @apply bg-white dark:from-navy-900 dark:via-navy-800 dark:to-navy-900;
+  }
+  
+  .site-header {
+    @apply text-center py-2 pt-8;
+  }
+
+  .site-title {
+    @apply text-6xl font-extrabold text-navy-900 dark:text-navy-50 mb-3 tracking-tight;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .site-subtitle {
+    @apply text-2xl text-navy-700 dark:text-navy-200 mb-2 font-medium tracking-wide;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} 
