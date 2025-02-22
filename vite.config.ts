@@ -14,9 +14,10 @@ export default defineConfig({
   build: {
     outDir: "dist",
     emptyOutDir: true,
+    assetsDir: "assets",
   },
   server: {
     port: 3000,
   },
-  base: '',
+  base: '/',
 });

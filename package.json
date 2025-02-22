@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://benvagle.github.io/Command-of-Commerce",
+  "homepage": "https://commandofcommerce.com",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
