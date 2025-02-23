@@ -8,7 +8,7 @@ export default function Layout() {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
       <div className="bg-slate-100">
         <div className="max-w-6xl mx-auto px-4">
           <header className="site-header">
@@ -20,8 +20,8 @@ export default function Layout() {
           </header>
         </div>
       </div>
-      <div className="sticky top-0 z-50 bg-slate-100 shadow-sm">
-        <nav className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
+      <div className="sticky top-0 z-[100] bg-slate-100 shadow-sm w-full">
+        <nav className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b w-full">
           <div className="container mx-auto px-4">
             <div className="flex justify-center space-x-4 py-4">
               <Link
@@ -68,7 +68,7 @@ export default function Layout() {
           </div>
         </nav>
       </div>
-      <main className="bg-white">
+      <main className="bg-white relative">
         <Outlet />
       </main>
     </div>
