@@ -67,20 +67,22 @@ function Home() {
             </div>
 
             {/* Main Content Section */}
-            <div className="relative">
+            <div className="relative flex flex-col lg:flex-row gap-8 lg:gap-12">
               <motion.div
                 whileHover={{ scale: 1.02 }}
-                className="float-left w-2/5 pr-12 pb-8"
+                className="w-full lg:w-1/2 mb-6 lg:mb-0"
               >
                 <div className="flex flex-col items-center">
-                  <img
-                    src={bookCover}
-                    alt="Command of Commerce Book Cover"
-                    className="w-full h-auto object-contain mb-6"
-                  />
+                  <div className="w-full max-w-[400px] lg:min-w-[400px]">
+                    <img
+                      src={bookCover}
+                      alt="Command of Commerce Book Cover"
+                      className="w-full h-auto object-contain mb-6"
+                    />
+                  </div>
                   <Button
                     size="lg"
-                    className="bg-primary hover:bg-primary/90"
+                    className="w-full max-w-[400px] md:max-w-[300px] bg-primary hover:bg-primary/90"
                     asChild
                   >
                     <a

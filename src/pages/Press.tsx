@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import pressImage from "@/img/foreign-affairs-ships.png";
 
 const item = {
   hidden: { opacity: 0 },
@@ -13,7 +14,7 @@ const pressItems = [
     description: "In this Foreign Affairs article, Brooks and Vagle challenge conventional wisdom about U.S.-China economic power dynamics, arguing that America's economic leverage over China is far greater than commonly understood.",
     link: "https://www.foreignaffairs.com/united-states/real-china-trump-card-brooks-vagle",
     outlet: "Foreign Affairs",
-    image: "/foreign-affairs-ships.jpg"
+    image: pressImage
   },
   // Add more press items as they come in
 ];

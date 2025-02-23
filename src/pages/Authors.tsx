@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import benVagleImage from "@/img/ben-vagle.png";
+import steveBrooksImage from "@/img/steve-brooks.png";
 
 const item = {
   hidden: { opacity: 0 },
@@ -23,7 +25,7 @@ export default function Authors() {
               className="flex flex-col md:flex-row gap-6"
             >
               <img
-                src="/src/img/ben-vagle.png"
+                src={benVagleImage}
                 alt="Ben A. Vagle"
                 className="w-64 h-80 object-cover rounded-lg shadow-md"
               />
@@ -56,7 +58,7 @@ export default function Authors() {
               className="flex flex-col md:flex-row gap-6"
             >
               <img
-                src="/src/img/steve-brooks.png"
+                src={steveBrooksImage}
                 alt="Stephen G. Brooks"
                 className="w-64 h-80 object-cover rounded-lg shadow-md"
               />

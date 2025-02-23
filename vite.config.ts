@@ -15,9 +15,11 @@ export default defineConfig({
     outDir: "dist",
     emptyOutDir: true,
     assetsDir: "assets",
+    copyPublicDir: true,
   },
   server: {
     port: 3000,
   },
   base: '/',
+  publicDir: 'public',
 });

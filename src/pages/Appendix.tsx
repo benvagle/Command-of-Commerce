@@ -23,7 +23,7 @@ export default function Appendix() {
             asChild
           >
             <a
-              href="/appendix.pdf"  // Make sure this matches your PDF filename
+              href="/appendix.pdf"  // This path is correct when PDF is in public folder
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center"
